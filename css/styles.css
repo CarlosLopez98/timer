@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    color: #51D3DB;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #01AACE;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #1b88a9;
+}
+
+.container {
+    width: 98%;
+    max-width: 400px;
+    height: 90vh;
+    max-height: 712px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    overflow: hidden;
+    background: rgb(79,209,222);
+    background: linear-gradient(180deg, rgba(79,209,222,1) 0%, rgba(90,223,202,1) 100%);
+}
+
+.nav {
+    width: 100%;
+    background-color: #01AACE;
+}
+
+.nav .nav-items {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.nav .nav-items .nav-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 70px;
+    color: #f1f1f1;
+    font-size: 14px;
+    text-align: center;
+}
+
+.nav .nav-items .nav-item:hover {
+    cursor: pointer;
+}
+
+.nav .nav-items .selected {
+    background-color: #0C9BBD;
+}
+
+.nav .nav-items .nav-item i {
+    font-size: 30px;
+}
+
+/* TIMER */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+    color: #f1f1f1;
+}
+
+.content .title h2 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.content .time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    margin-top: 14px;
+    border: 3px solid #D3F4F6;
+    border-radius: 50%;
+}
+
+.stopwatch {flex-direction: column;}
+
+.content .time p {
+    font-size: 40px;
+}
+
+.content .time #stop-mili {
+    font-size: 14px;
+}
+
+.content .time .timeSetter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeSetter a {
+    color: #f1f1f1;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+.timeSetter a:hover {
+    cursor: pointer;
+    font-size: 26px;
+    transition: 0.4s;
+}
+
+/* BUTTONS */
+.control-panel {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100px;
+    padding: 10px 0;
+}
+
+.control-panel .btn-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 50%;
+    background-color: #ADFCE7;
+    -webkit-box-shadow: 0px 0px 16px 4px rgba(0,0,0,0.36); 
+    box-shadow: 0px 0px 16px 4px rgba(0,0,0,0.36);
+    font-size: 40px;
+    transition: 0.4s;
+}
+
+.control-panel .btn-action:hover {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.control-panel .btn-action.hidden {
+    display: none;
+}
+
+#btn-play {color: #25be98;}
+
+#btn-cancel {color: #FD7673;}
+
+#btn-pause {color: #13586d;}
+
+#btn-stop {color: #eb4d4b;}
+
+footer {
+    color: #f1f1f1;
+}
